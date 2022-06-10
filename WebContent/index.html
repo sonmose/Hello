@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>index.html</title>
+<!--CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+	<h1>인덱스 페이지 입니다</h1>
+	<!--상대경로 -->
+	<img src="images/yellowbird.png">
+	<!-- 절대경로 -->
+	<img src="/Hello/images/yellowbird.png">
+	<ul>
+		<li><a href="play.html">놀러가기</a></li>
+		<!-- /시작은 절대경로 /project name(context path) -->
+		<li><a href="/Hello/play.html">놀러가기</a></li>
+		<li><a href="hello">놀러가기</a></li>
+		<!--WebContent에 sub 폴더 만들고 study.html 만들어 404해결  -->
+		<li><a href="sub/study.html">공부하기</a></li>
+		<!--src에 새로운 프로젝트를 만들고 @WebServlet("/sub/study")를 만들기  -->
+		<li><a href="sub/study">공부하기</a></li>
+	</ul>
+</div>
+</body>
+</html>
